@@ -18,5 +18,14 @@ public class Cliente {
         this.telefone = telefone;
     }
 
-    public String getNome() { return nome; }
+    public String getNome() { 
+        return nome; 
+    }
+    public String getTelefone(){
+        return telefone;
+    }
+    public int getId(){ 
+        return id;
+    }
+    
 }

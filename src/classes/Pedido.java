@@ -22,4 +22,10 @@ public class Pedido {
     public int getNumero(){
         return numero;
     }
+    public Status getStatus(){
+        return status;
+    }
+    public Cliente getCliente(){
+        return cliente;
+    } 
 }

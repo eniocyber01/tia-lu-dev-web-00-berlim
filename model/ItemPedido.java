@@ -1,3 +1,4 @@
+package model;
 public class ItemPedido {
     private ItemCardapio item;
     private int quantidade;

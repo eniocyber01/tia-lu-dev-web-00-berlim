@@ -1,3 +1,4 @@
+package model;
 public class ItemCardapio {
     private static int proximoCodigo = 1;
     private int codigo;

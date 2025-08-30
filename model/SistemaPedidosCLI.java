@@ -346,7 +346,7 @@ public class SistemaPedidosCLI {
     
     public static void consultarPedidosPorStatus() {
         System.out.println("\n--- Consultar Pedidos por Status ---");
-        System.out.println("Status disponíveis: ACEITO, PREPARANDO, FEITO, AGUARDANDO_ENTREGADOR, SAIU_PARA_ENTREGA, ENTREGUE");
+        System.out.println("Status disponíveis: EM_ANALISE, ACEITO, PREPARANDO, FEITO, AGUARDANDO_ENTREGADOR, SAIU_PARA_ENTREGA, ENTREGUE");
         System.out.print("Digite o status para consulta: ");
         String statusInput = scanner.nextLine().toUpperCase();
 

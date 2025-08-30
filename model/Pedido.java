@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Pedido {
     public enum StatusPedido {
-        ACEITO, PREPARANDO, FEITO, AGUARDANDO_ENTREGADOR, SAIU_PARA_ENTREGA, ENTREGUE
+        EM_ANALISE,ACEITO, PREPARANDO, FEITO, AGUARDANDO_ENTREGADOR, SAIU_PARA_ENTREGA, ENTREGUE
     }
 
     private static int proximoNumero = 1;
@@ -19,7 +19,7 @@ public class Pedido {
         this.numero = proximoNumero++;
         this.cliente = cliente;
         this.itens = new ArrayList<>();
-        this.status = StatusPedido.ACEITO;
+        this.status = StatusPedido.EM_ANALISE;
         LocalDateTime.now();
     }
 
@@ -34,6 +34,9 @@ public class Pedido {
     public boolean avancarStatus() {
         // Lógica de transição de status
         switch (this.status) {
+            case EM_ANALISE:
+                this.status = StatusPedido.ACEITO;
+                return true;
             case ACEITO:
                 this.status = StatusPedido.PREPARANDO;
                 return true;

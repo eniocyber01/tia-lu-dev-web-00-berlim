@@ -97,7 +97,7 @@ public class SistemaPedidosCLI {
                 }
             } else {
                 System.out.println("Entrada inválida. Por favor, digite um número.");
-                scanner.next(); // Descarta a entrada inválida
+                scanner.next(); 
             }
         }
         scanner.nextLine();
